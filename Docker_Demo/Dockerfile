@@ -1,9 +1,9 @@
 FROM ubuntu
 
-RUN mkdir /bin
+CMD mkdir /bin
 
 COPY assignment.sh /bin
 
-RUN apt install ngnix
+CMD chmod u+x /bin/assignment.sh
 
 CMD ./bin/assignment.sh
