@@ -1,5 +1,7 @@
 FROM ubuntu
 
+# Copyright (c) Roy Rodriguez 2024
+
 RUN mkdir /server
 COPY assignment/assignment.sh /server/assignment.sh
 RUN chmod +x /server/assignment.sh
